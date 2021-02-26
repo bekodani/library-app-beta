@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Libary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+    <form id="submitForm">
+        <div class="formBox">
+            <label for="title"></label>
+            <input type="text" id="title" placeholder="Title">
+        </div>
+        <div class="formBox">
+            <label for="author"></label>
+            <input type="text" id="author" placeholder="Author">
+        </div>
+        <div class="formBox">
+            <label for="totalPages"></label>
+            <input type="number" id="totalPages" placeholder="Pages">
+        </div>
+        <div class="forBox">
+            <label for="readStatus">Did you read it?</label>
+            <select  id="readStatus">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button type="button" class="btn cancel-btn">Cancel</button>
+            <input type="submit" value="Add Book" class="btn submit-btn">
+        </div>
+    </form>
+    </div>
+    </div>
+    <header class="header">
+        <ul class="header-child">
+            <li class="page-title"><h2>Online Library</h2></li>
+            <li class="header-button"><button id="getForm">Add Book</button></li>
+            <li class="header-counter"><h3>You have listed <span id="counter1">0</span> books on the page, and you read <span id="counter2">0</span> of them</h3></li>
+        </ul>
+    </header>
+    <div class="card-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>
